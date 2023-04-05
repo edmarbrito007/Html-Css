@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando link´s</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        div > p{
+            display: none;
+        }
+        
+        div:hover > p{
+            display: block;
+        } 
+
+        .you:hover{
+            color: aqua;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando link´s </h1>
+    <ul>
+        <a href="https://github.com/" target="_blank">
+            <li><div class="Ghit">Ghit hubr <p> repositorio guanabara</p></div></li>
+        </a>
+        <li><a href="https://www.youtube.com/" target="_blank"><DIV class="you">Youtube <P>site do youtube</P></DIV></a></li>
+        <li><a href="https://www.google.com/search?q=gogle&rlz=1C1FCXM_pt-PTBR992BR992&oq=gogle&aqs=chrome..69i57j46i10i131i199i433i465i512j0i10i131i433i512l5j0i10i131i433i457i512j0i402i650.3006j0j4&sourceid=chrome&ie=UTF-8">google</a> </li>
+
+    </ul>
+    
+</body>
+</html>

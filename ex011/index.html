@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="foto-p.png" type="image/x-icon">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tende abrir essas Imagens em vários dispositivos diferentes ou simplesmente aumente e diminua o seu navegador </p>
+    <picture>
+        
+        <source media="(max-width:550px )" srcset="foto-g.png" type="image/png">
+        <source media="(max-width: 750px )" srcset="Imagens/photo-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="Imagens/photo-m.png" type="image/png">
+                
+        <img src="Imagens/photo-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Tocador de Audio</h1>
+    <p>Vamos acresentar um audio a pagina</p>
+    <!--
+    <audio src="midia/happy-mistake.mp3" autoplay controls> </audio>-->
+    <!--Suporta os formatos MP3 WAV OGG--> 
+    <audio preload="metadata" controls >
+      <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    
+    </audio>
+    
+    <p>para realizar o download Clique <a href="midia/happy-mistake.mp3" target="_blank" >Aqui</a></p>
+    <p><a href="https://www.youtube.com/watch?v=4OZYsFl-J9s&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=33" rel="internal" target="_blank">Vá para o curso em video</a></p>
+</body>
+</html>
