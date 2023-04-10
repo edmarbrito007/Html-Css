@@ -9,6 +9,7 @@
     --cor5: #101B36;
     --cor-fonte: #4D67EB;
     --cor-fundo: #b6b8d49a;
+    --fundo-listas:  rgba(128, 128, 128, 0.116);
 
 }
 
@@ -73,11 +74,16 @@ nav > span {
     background-color: var(--cor3);
     padding: 14px;
     text-shadow: 1px 1px 2px black;
+
        
 
     
    
 
+}
+nav > span > a{
+    text-decoration: none;
+    color: white
 }
 
 nav > span:hover{
@@ -137,3 +143,68 @@ footer{
     color: white;
     border-radius: 20px;
 }
+
+
+
+
+ /*  codigo pagina apoio diario     */
+
+img.voltar{
+    width: 20px;
+    margin-top: -10px;
+    margin-right: 5px;
+    
+}
+
+main.diario{
+    background-color: white;
+    font-size: large;
+    
+
+}
+
+main.diario ul{
+
+    margin: auto;
+    background-color: var(--fundo-listas);
+    border: solid 2px black;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px;
+    
+
+}
+
+main.diario h2{
+    padding-left: 30px;
+    color: var(--cor-fonte);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    text-shadow:  2px 1px 1px 2px black;
+
+}
+main.diario h3{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+main.diario li{
+
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+ /*  codigo pagina apoio a changes   */
