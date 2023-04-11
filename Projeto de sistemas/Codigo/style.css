@@ -156,6 +156,9 @@ img.voltar{
     
 }
 
+
+
+
 main.diario{
     background-color: white;
     font-size: large;
@@ -167,9 +170,10 @@ main.diario ul{
 
     margin: auto;
     background-color: var(--fundo-listas);
-    border: solid 2px black;
+    border: solid 1px black;
     border-radius: 20px 20px 20px 20px;
     margin: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.623);
     
 
 }
@@ -179,20 +183,23 @@ main.diario h2{
     color: var(--cor-fonte);
     margin-bottom: 10px;
     padding-top: 5px;
-    text-shadow:  2px 1px 1px 2px black;
+    text-shadow:  1px 1px  2px rgba(0, 0, 0, 0.13);
 
 }
 main.diario h3{
     margin: auto;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 23px;
     padding-top: 5px;
+    text-shadow:  1px 1px  1px rgba(0, 0, 0, 0.034);
 }
 
 main.diario li{
 
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 20px;
+    font-weight: normal;
+    line-height: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
