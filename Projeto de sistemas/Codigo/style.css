@@ -95,9 +95,18 @@ nav > span:hover{
 
     
 }
+
+main#principal{
+    background-color: white;
+    background-image: url(..//Imagens/logohdc400.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+}
     
 main{
     background-color: white;
+    height: 500px;
 }
 
 main > ul > h3{
