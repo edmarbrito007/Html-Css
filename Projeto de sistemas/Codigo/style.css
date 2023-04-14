@@ -74,13 +74,10 @@ nav > span {
     background-color: var(--cor3);
     padding: 14px;
     text-shadow: 1px 1px 2px black;
-
-       
-
-    
-   
+      
 
 }
+
 nav > span > a{
     text-decoration: none;
     color: white
@@ -88,15 +85,14 @@ nav > span > a{
 
 nav > span:hover{
 
-    background-color: var(--cor1);
-    
-     
-    
+    background-color: var(--cor1);   
+      
 
     
 }
 
 main#principal{
+    position: relative;
     background-color: white;
     background-image: url(..//Imagens/logohdc400.png);
     background-repeat: no-repeat;
@@ -109,33 +105,56 @@ main{
     height: 500px;
 }
 
+
+
+main > ul {
+    position: absolute;
+    left: 72%;
+    transform: translate(10px);
+    
+
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.116) ;
+    width: 300px;
+    
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px 0px 0px 10px;
+    
+    
+}
+
 main > ul > h3{
     text-decoration: underline;
     margin-bottom: 10px;
     color: var(--cor3);
     font-size: 20px;
     text-shadow: 1px 1px 5px --cor3;
+    padding-top: 10px;
     
 }
 
-main > ul {
 
-    font-size: 18px;
-    background-color: rgba(128, 128, 128, 0.116) ;
-    width: 300px;
-    margin-left: auto;
-    box-shadow: 1px 1px 5px black;
-    border-radius: 10px;
-    
-    
+main > ul > li{
+    height: 26px;   
+         
 }
 
 main > ul > li > a {
-
     text-decoration: none;
-    color: var(--cor1);
+    color: var(--cor1); 
+    font-weight: 500;  
     
 }
+
+
+
+
+main > ul > li:hover{
+
+    text-decoration: underline;
+    color: black;
+}
+
 
 main > ul > li > a:hover{
 
@@ -143,12 +162,15 @@ main > ul > li > a:hover{
     color: black;
 }
 
+
+
+
 footer{
     text-align: center;
     background-color: var(--cor3);
     width: 350px;
     margin: auto;
-    margin-top: 400px;
+    margin-top: auto;
     color: white;
     border-radius: 20px;
 }
@@ -224,3 +246,16 @@ main.diario li{
 
 
  /*  codigo pagina apoio a changes   */
+
+
+
+
+
+ main.change h2{
+    padding-left: 30px;
+    color: var(--cor-fonte);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    text-shadow:  1px 1px  2px rgba(0, 0, 0, 0.13);
+
+}
