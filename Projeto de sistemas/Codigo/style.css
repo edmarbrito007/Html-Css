@@ -117,8 +117,8 @@ main > ul {
     background-color: rgba(128, 128, 128, 0.116) ;
     width: 300px;
     
-    box-shadow: 1px 1px 5px black;
-    border-radius: 10px 0px 0px 10px;
+    box-shadow: -1px 1px 3px black;
+    border-radius: 0px 0px 0px 10px;
     
     
 }
@@ -252,10 +252,83 @@ main.diario li{
 
 
  main.change h2{
-    padding-left: 30px;
-    color: var(--cor-fonte);
+    padding-left: 58px;
+    color: white;
     margin-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 10px;
     text-shadow:  1px 1px  2px rgba(0, 0, 0, 0.13);
+    background-color: var(--cor3);
 
 }
+
+main.change ul{
+    
+    background-color: var(--fundo-listas);
+    border-radius: 0px 0px 0px 20px;
+    margin: 10px;
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.623);
+    width: 400px;   
+    position: absolute;
+    left: 60%;
+    transform: translate(52px, -23px);
+    padding-top: 10px;
+    padding-left: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    
+    
+    
+
+}
+
+main.change {
+    height:700px;
+}
+
+main.change > ul > h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: var(--cor3);
+    font-size: 20px;
+    text-shadow: 1px 1px 5px --cor3;
+    padding-bottom: 10px;
+    text-align: center;
+    
+        
+
+
+}
+main.change > ul.change > li{
+    height: 30px;
+    color: black;
+    padding-left: 10px;
+    
+}
+
+main.change > ul.change p {
+    height: 30px;    
+
+}
+
+main.change > span > h3{
+    margin-left: 196px;
+    padding: 2px 5px;
+    color: var(--cor5);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.041);
+    
+
+}
+
+main.change > span > div{
+    max-width: 815px;;
+    min-height: 157px;
+    
+    background-image: url(../Imagens/Preço\ siebel.JPG);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
