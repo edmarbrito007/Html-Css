@@ -282,7 +282,7 @@ main.change ul{
 }
 
 main.change {
-    height:700px;
+    height:auto;
 }
 
 main.change > ul > h3 {
@@ -319,16 +319,32 @@ main.change > span > h3{
 
 }
 
-main.change > span > div{
-    max-width: 815px;;
-    min-height: 157px;
-    
-    background-image: url(../Imagens/Preço\ siebel.JPG);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-    
-    margin-left: 0px;
-    margin-top: 5px;
+main.change > span > div > table{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+}
+table{
+    border-collapse: collapse;
+
 }
 
+    
+td ,th {
+        
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+td.num{
+    text-align: right;
+}
+
+td.seguimento{
+    font-weight: bold;
+}
+
+thead {
+    background-color: rgba(128, 128, 128, 0.486);
+    
+}
