@@ -292,12 +292,10 @@ main.change > ul > h3 {
     font-size: 20px;
     text-shadow: 1px 1px 5px --cor3;
     padding-bottom: 10px;
-    text-align: center;
-    
+    text-align: center; 
         
-
-
 }
+
 main.change > ul.change > li{
     height: 30px;
     color: black;
@@ -316,20 +314,52 @@ main.change > span > h3{
     color: var(--cor5);
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.041);
     
-
 }
 
 main.change > span > div > table{
     font-family: Arial, Helvetica, sans-serif;
     width: 600px;
 }
-table{
-    border-collapse: collapse;
+
+caption {
+    background-color: var(--cor5);
+    padding: 20px 10px 20px 10px;
+    margin-top: -10px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+    min-width: 801px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.918);
 
 }
 
+table{
+    border-collapse: collapse;
+    position: relative;
+}
+
+thead {
+    background-color: rgba(128, 128, 128, 0.658); 
+    font-size: 1.1em;   
     
-td ,th {
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: rgb(128, 128, 128); 
+
+}
+
+
+tbody > tr:nth-child(2n){
+    background-color: rgba(211, 211, 211, 0.411);
+}
+
+
+
+    
+td ,th{
         
     border: 1px solid black;
     padding: 10px;
@@ -338,13 +368,15 @@ td ,th {
 
 td.num{
     text-align: right;
+    padding-right: 10px;
+    
 }
 
 td.seguimento{
     font-weight: bold;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.418);
+    font-size: 1.0em;
 }
 
-thead {
-    background-color: rgba(128, 128, 128, 0.486);
-    
-}
+
