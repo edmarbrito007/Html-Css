@@ -109,14 +109,11 @@ main{
 
 main > ul {
     position: absolute;
-    left: 72%;
-    transform: translate(10px);
-    
-
+    margin-left: 900px;
+    transform: translate(10px);  
     font-size: 18px;
     background-color: rgba(128, 128, 128, 0.116) ;
     width: 300px;
-    
     box-shadow: -1px 1px 3px black;
     border-radius: 0px 0px 0px 10px;
     
@@ -261,16 +258,15 @@ main.diario li{
 
 }
 
-main.change ul{
+ ul.change{
     
     background-color: var(--fundo-listas);
     border-radius: 0px 0px 0px 20px;
-    margin: 10px;
     box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.623);
-    width: 400px;   
+    width: 400px;  
     position: absolute;
-    left: 60%;
-    transform: translate(52px, -23px);
+    
+    transform: translate(-77px,-12px);
     padding-top: 10px;
     padding-left: 28px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
