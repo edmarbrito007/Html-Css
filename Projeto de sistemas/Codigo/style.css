@@ -53,14 +53,10 @@ header > h1{
 
 
 nav{
-
-
+position: relative;
 background-color: var(--cor3);
 padding: 15px;
 height: 20px;
-
-
-
 
 }
 
@@ -74,8 +70,7 @@ nav > span {
     background-color: var(--cor3);
     padding: 14px;
     text-shadow: 1px 1px 2px black;
-      
-
+  
 }
 
 nav > span > a{
@@ -85,9 +80,9 @@ nav > span > a{
 
 nav > span:hover{
 
-    background-color: var(--cor1);   
-      
-
+    background-color: var(--cor1);  
+    
+       
     
 }
 
@@ -143,6 +138,15 @@ main > ul > li > a {
     
 }
 
+main > section#fila {
+    position: relative;
+    margin-left: 900px;
+    transform: translate(10px , 250px);
+   
+
+
+}
+
 
 
 
@@ -150,6 +154,8 @@ main > ul > li:hover{
 
     text-decoration: underline;
     color: black;
+    transform: translate(-5px, -5px);
+    transition: transform 0.2 s;
 }
 
 
