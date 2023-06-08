@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fomulario 004</title>
+</head>
+<body>
+    <h1>formulario 05</h1>
+
+    <form action="cadastro.php" method="post">
+        <fieldset >
+            <legend >Sexo </legend>
+            <label for="imas">Masculino</label >
+            <input type="radio" name="sexo" id="imas" value="M">
+
+            <label for="ifem">Feminino </label>
+            <input type="radio" name="sexo" id="ifem" required value="F">
+            
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Foto do perfil</legend>
+            <p>
+                <label for="ifoto">Selecione a Foto</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>            
+
+            <input type="checkbox" name="esfutrbol" id="iesfotebol" ><label for="iesfotebol">Futebol</label><br>
+            <input type="checkbox" name="esbasquete" id="iesbasquete" > <label for="iesbasquete">Basquete</label><br>
+        
+                    
+      
+    
+        </fieldset>
+
+           
+
+            <fieldset >
+                <legend >homossesual ? </legend>
+                <label for="inão">Sim</label >
+                <input type="radio" name="homossesual" id="inão" value="claro que nao ">
+
+                <label for="isim">Não </label>
+                <input type="radio" name="homossesual" id="isim" required value="Obivio">
+            </fieldset>     
+            
+
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>      
+    </form>
