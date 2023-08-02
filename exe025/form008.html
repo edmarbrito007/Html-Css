@@ -36,9 +36,34 @@
         </p>
 
         <p>
+            <label for="iano "> Que ano voce nasceu ?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade">
+
+        </p>
+
+        <p>
+            <label for="iidade"> Sua Idade é: </label>
+            <output id="iidade"> 0 </output>
+        </p>
+
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value=" reset">
         </p>    
+
+        <p>
+            <label for="inum">Brilho</label>
+            <input type="range" name="num" id="inum" max="10" min="1" value="5" oninput="ival.innerHTML = Number(inum.value)" >
+            <output id="ival">5  </output>
+        </p>
+
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            
+            }
+        </script>
 
 
     </form>
