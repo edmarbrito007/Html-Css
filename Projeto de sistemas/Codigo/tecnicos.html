@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipe Técnica HDC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="shortcut icon" href="..//Imagens/" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Codigo/Estilos/style.css">
+    
+    
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="../Codigo/script/change.js"></script>
+    
 
     <header> <!-- Cabeçalho-->
         <a href="https://www.capgemini.com/br-pt/" target="_blank"><img src="../Imagens/capgemini dowload 50.jpg" alt="Capgemini logo"> </a>
         <h1>
-            Time tecnico HDC
+            Time Técnico HDC
 
         </h1>
 
@@ -21,7 +30,7 @@
     </header>
     <nav>
         
-        <span>
+        <span id="report" onclick="clickreport()">
          Report de Fila
                                       
         </span>
@@ -29,6 +38,7 @@
 
         <span> 
             Mascara de Link´s
+            
   
         </span>
 
@@ -41,45 +51,103 @@
             <a href="changes.html">Apoio a Changes</a>
 
         </span>
+                <p id="menu" style="display: inline-block;">
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Link´s    Uteis &#x1F517;
+                </a>
+              
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+
+                    <a class="submenu" href="\\internal.timbrasil.com.br\FileServer\TBR\CCO\SalesConsumer\SalesConsumer\OperacaoStefanini\Gestão Técnica HDC\DIÁRIO DE BORDO\2023" target="_blank">Diario de Bordo
+
+                    </a>
+
+                    <a  class="submenu" href="\\internal.timbrasil.com.br\FileServer\TBR\CCO\SalesConsumer\SalesConsumer\OperacaoStefanini\Gestão Técnica HDC\Whatsapp - Escalation Gerencial\2023" target="_blank">Relatorio EG
+
+                    </a>
+
+                    <a class="submenu" href="\\internal.timbrasil.com.br\FileServer\TBR\CCO\SalesConsumer\SalesConsumer\OperacaoStefanini\Supervisão\Escalas" target="_blank">Escala Técnicos e Operação
+
+                    </a>
+
+                    <a class="submenu" href="https://apptimvendas.timbrasil.com.br/apps/loja/timvendas.html" target="_blank">APP Tim Vendas Android
+
+                    </a>
+
+                    <a class="submenu" href="https://apptimvendas.timbrasil.com.br/apps/loja/" target="_blank">APP Tim Vendas IOS
+
+                    </a>
+
+
+                </div>
+              </div>
+        
 
 
 
     </nav>
 
 
-    <main id="principal"> <!-- Conteudo principal-->
-        <ul>
+    <main id="principal"> <!-- Conteudo principal
+         <ul id="listaprincipal">
             <h3>
                 Link´s Úteis&#x1F517;
 
             </h3>
-            <li>
+            <li class="principal">
                 <a href="\\internal.timbrasil.com.br\FileServer\TBR\CCO\SalesConsumer\SalesConsumer\OperacaoStefanini\Gestão Técnica HDC\DIÁRIO DE BORDO\2023" target="_blank">Diario de Bordo</a>
 
             </li>
-            <li>
+            <li class="principal">
                 <a href="\\internal.timbrasil.com.br\FileServer\TBR\CCO\SalesConsumer\SalesConsumer\OperacaoStefanini\Gestão Técnica HDC\Whatsapp - Escalation Gerencial\2023" target="_blank">Relatorio EG</a>
             </li>
-            <li>
+            <li class="principal">
                 <a href="\\internal.timbrasil.com.br\FileServer\TBR\CCO\SalesConsumer\SalesConsumer\OperacaoStefanini\Supervisão\Escalas" target="_blank">Escala Técnicos e Operação</a>
             </li>
 
-            <li>
+            <li class="principal">
                 <a href="https://apptimvendas.timbrasil.com.br/apps/loja/timvendas.html" target="_blank">APP Tim Vendas Android</a>
  
-            </li>
+            </li class="principal">
 
-            <li>
+            <li class="principal">
                 <a href="https://apptimvendas.timbrasil.com.br/apps/loja/" target="_blank">APP Tim Vendas IOS</a>
                 
             </li>
-        </ul>
+        </ul>  -->
 
-        <section id="fila">
-            <iframe src="https://cgtimhdc.inventtis.com:9443/#/tenant/2/dashboards/3" frameborder="0"></iframe>
+        <Div id="filas">
+            <div id="lbmartim">
+                <p>
+                    <label for="usumartim"> Usuarios no martim: </label>
+                    <input type="number" id="usumartim" min="0" placeholder="Quantidade na fila" required>
+                </p>
+
+                <p class="input">
+                    <label for="tmemartim" > TME no Martim: </label>
+                    <input type="number" id="tmemartim" min="0" placeholder="Formato segundos" required >
+                </p>
+
+                <p class="input">
+                    <label for="filamartim">Mais Antiga martim: </label>
+                    <input type="number"  id="filamartim" min="0" placeholder="Formato segundos" required>
+                </p>
+
+                <p class="input">
+                    <label for="usumura">Usuarios na Ura: </label>
+                    <input type="number"  id="usumura" min="0" placeholder="Espera na Ura">
+                </p>
+
+                <p>
+
+                </p>
+
+            </div>
 
 
-        </section>
+        </Div>
 
 
     </main>

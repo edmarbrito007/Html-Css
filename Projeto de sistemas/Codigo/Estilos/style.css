@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor1: #477AF5;
+    --cor2: #355BB5;
+    --cor3: #223B75;
+    --cor4: #406EDB;
+    --cor5: #101B36;
+    --cor-fonte: #4D67EB;
+    --cor-fundo: #b6b8d49a;
+    --fundo-listas:  rgba(128, 128, 128, 0.116);
+
+}
+
+*{
+    margin: 0px;
+    
+}
+
+body{
+
+    background-color: var(--cor-fundo);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 1250px;
+  
+
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), transparent  );
+    margin: auto;
+    text-align: center;
+    max-height: 200px;
+    min-height: 100px;
+    padding: 4px 2px 2px 2px;
+    border: solid 2px black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+
+}
+
+
+header > h1{
+
+    margin-top: 4px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.767);
+
+    
+}
+
+
+nav{
+position: relative;
+background-color: var(--cor3);
+
+height: 40px;
+
+}
+
+
+
+nav > span {
+    
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 10px 17px 12px 19px;
+    text-shadow: 1px 1px 2px black;
+    height: px;
+  
+}
+
+nav > span > a{
+    text-decoration: none;
+    color: white
+}
+
+p#menu{
+    position: relative;
+    left: 398px;
+}
+
+div#collapseExample{
+    position: relative;
+    left: 752px;
+    width: 500px;
+    
+}
+
+a.submenu{
+    color: black;
+    border: solid 1px black;
+    background-color: white;
+    width: 300px;
+    height: 35px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
+    font-weight: bold;
+}
+
+   
+a.submenu:hover {
+    text-decoration: none;
+    background-color: var(--cor1);  
+    color: white;
+    transform: translate(5px, 5px);
+    transition: transform 0.2 s;
+
+}
+
+
+nav > span:hover{
+
+    background-color: var(--cor1); 
+    transform: translate(5px, 5px);
+    transition: transform 0.2 s;
+ 
+    
+       
+    
+}
+
+main#principal{
+    
+    background-color: white;
+    background-image: url(../../Imagens/logohdc400.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+}
+    
+main{
+    background-color: white;
+    height: 500px;
+}
+
+
+
+main > ul {
+    position: absolute;
+    margin-left: 900px;
+    transform: translate(10px);  
+    font-size: 18px;
+    background-color: white;
+    width: 300px;
+    box-shadow: -1px 1px 3px black;
+    border-radius: 0px 0px 0px 10px;
+    
+    
+}
+
+main > ul > h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--cor3);
+    font-size: 20px;
+    text-shadow: 1px 1px 5px --cor3;
+    padding-top: 10px;
+   
+
+    
+}
+
+
+main > ul > li{
+    height: 35px;   
+         
+}
+
+main > ul > li > a {
+    text-decoration: none;
+    color: var(--cor1); 
+    font-weight: 500;  
+    
+}
+
+main > section#fila {
+    position: relative;
+    
+    transform: translate(10px , 250px);
+   
+
+
+}
+
+
+
+main > ul > li:hover{
+
+    text-decoration: underline;
+    color: black;
+    transform: translate(-5px, -5px);
+    transition: transform 0.2 s;
+}
+
+
+main > ul > li > a:hover{
+
+    text-decoration: underline;
+    color: black;
+}
+
+
+li.principal {
+    border: solid 1px black;
+    list-style-type: none;
+    margin-left: -40px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px 1px 1px 5px;
+}
+
+li.principal:hover{
+    background-color: var(--cor1);
+    
+}
+
+div#filas{
+    display: none;
+}
+
+
+div#lbmartim{
+    display: inline-block;
+    background-color: lightgray;
+
+}
+  
+
+
+p.input{
+    padding: 10px;
+    margin-top: -10px;
+    font-weight: bold;
+
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cor3);
+    width: 350px;
+    margin: auto;
+    margin-top: auto;
+    color: white;
+    border-radius: 20px;
+}
+
+ /*  codigo pagina apoio a changes   */
+
+
+
+

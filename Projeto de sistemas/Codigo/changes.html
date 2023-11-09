@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Changes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Codigo/Estilos/style.css">
+    <link rel="stylesheet" href="../Codigo/Estilos/diario.css">
+    <link rel="stylesheet" href="../Codigo/Estilos/chage.css">
+    <link rel="stylesheet" href="../Codigo/script/change.js">
+    
 </head>
 <body>
+    <script src="../Codigo/script/change.js"></script>
 
     <header> <!-- Cabeçalho-->
         <a href="https://www.capgemini.com/br-pt/" target="_blank"><img src="../Imagens/capgemini dowload 50.jpg" alt="Capgemini logo"> </a>
@@ -36,6 +41,10 @@
 
             <h2>
                 Changes &#x1F480;
+                <span> 
+                    <button id="bapp" type="button" onclick="clickapp()">App Tim Vendas</button>
+                    <button id="bsiebel" type="button" onclick="clicksbl()"> Siebel Pos </button>
+                </span>
             </h2>
 
         </div>
@@ -86,11 +95,14 @@
             
         </ul>
 
-        <span>
-             
-        </span>
-        <table> 
-            <caption>Preços e Catalogo APP e Siebel (<i>Ultima atualização 07/05/2023</i> )</caption>
+               
+
+        <table id="tapp"> 
+
+            <caption>
+                Catalogo do APP TIM VENDAS <i>(Ultima atualização 08/11/2023)</i>
+
+            </caption>
             <thead>
                 <th> <strong>Plano</strong></th>
                 <th style="width: 210px;"> <strong>Valor do Plano</strong></th>
@@ -107,19 +119,19 @@
                 <tr>
                     <td>TIM Black B 5.0</td>
                     <td class="num">R$ 184,99</td>
-                    <td class="num">R$ 35,00</td>
+                    <td class="num">R$ 45,00</td>
                 </tr>
 
                 <tr>
                     <td>TIM Black C Hero 5.0</td>
                     <td class="num">R$ 219,99</td>
-                    <td class="num">R$ 60,00</td>
+                    <td class="num">R$ 70,00</td>
                 </tr>
 
                 <tr>
                     <td>TIM Black C Ultra 5.0 </td>
                     <td class="num">R$ 219,99</td>
-                    <td class="num">R$60,00</td>
+                    <td class="num">R$70,00</td>
                 </tr>
 
                 <tr>
@@ -148,8 +160,24 @@
                <tr> 
                     <td>TIM Black Multi D 5.0</td>
                     <td class="num"> R$ 619,99</td>
-                    <td class="num"> R$ 110,00</td>             
+                    <td class="num"> R$ 110,00</td>   
+                    
+                    
                </tr>
+
+              
+               <tr>
+                    <td> TIM Black Multi A ONE</td>
+                    <td class="num"> R$ 354,99</td>
+                    <td class="num"> R$ 130,00</td>
+               </tr>
+               
+               <tr>
+                    <td>TIM Black Multi C ONE </td>
+                    <td class="num"> R$ 434,99</td>
+                    <td class="num"> R$ 130,00</td>   
+               </tr>
+
 
                <tr> 
                     <td class="seguimento" colspan="3">CATALOGO CONTROLE FATURA </td>
@@ -211,10 +239,165 @@
 
 
                 </table>
+        
+        <table id="tsbl"> 
+
+            <caption id="tsbl">
+                Catalogo do Siebel Pos <i>(Ultima atualização 08/11/2023)</i>
+
+            </caption>
+            <thead>
+                <th> <strong>Plano</strong></th>
+                <th style="width: 210px;"> <strong>Valor do Plano</strong></th>
+                <th> <strong>Desconto Fidelizado</strong></th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>TIM Black A 5.0</td>
+                    <td class="num">R$ 169,99</td>
+                    <td class="num">R$ 50,00</td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black B 5.0</td>
+                    <td class="num">R$ 184,99</td>
+                    <td class="num">R$ 45,00</td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black C Hero 5.0</td>
+                    <td class="num">R$ 219,99</td>
+                    <td class="num">R$ 60,00</td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black C Ultra 5.0 </td>
+                    <td class="num">R$ 219,99</td>
+                    <td class="num">R$ 60,00</td>
+                </tr>
+
+                <tr>
+                    <td class="seguimento" colspan="3" id="tdsbl">CATALOGO FAMÍLIA</td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black Multi A Hero 5.0</td>
+                    <td class="num">R$ 309,99</td>
+                    <td class="num">R$ 100,00</td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black Multi B 5.0</td>
+                    <td class="num"> R$ 389,99</td>
+                    <td class="num"> R$ 110,00</td>                   
+
+                </tr>
+
+                <tr> 
+                    <td>TIM Black Multi C 5.0</td>
+                    <td class="num">R$ 439,99</td>
+                    <td class="num">R$ 110,00</td>
+                </tr>
+
+                <tr> 
+                    <td>TIM Black Multi D 5.0</td>
+                    <td class="num"> R$ 619,99</td>
+                    <td class="num"> R$ 110,00</td>   
+                    
+                    
+                </tr>
+
                 
+                <tr>
+                    <td> TIM Black Multi A ONE</td>
+                    <td class="num"> R$ 354,99</td>
+                    <td class="num"> R$ 130,00</td>
+                </tr>
+                
+                <tr>
+                    <td>TIM Black Multi C ONE </td>
+                    <td class="num"> R$ 434,99</td>
+                    <td class="num"> R$ 140,00</td>   
+                </tr>
+
+
+                <tr> 
+                    <td class="seguimento" colspan="3" id="tdsbl">CATALOGO CONTROLE FATURA </td>
+                </tr>
+                <tr>
+                    <td>Tim Controle Smart 5.0</td>
+                    <td class="num">R$ 81,99</td>
+                    <td class="num">R$ 26,00</td>
+                </tr>
+
+                <tr>
+                    <td>Tim Controle Redes Sociais </td>
+                    <td class="num">R$ 96,99 </td>
+                    <td class="num">R$ 27,00</td>
+                    </tr>
+
+                <tr>
+
+                <tr>
+                    <td>Tim Controle A PLUS </td>
+                    <td class="num">R$ 66,99 </td>
+                    <td class="num">R$ 21,00</td>
+                </tr>
+
+                <tr>
+                    <td>Tim Controle LIGHT PLUS </td>
+                    <td class="num">R$ ?? </td>
+                    <td class="num">R$ ?? </td>
+                </tr>
+
+                <tr>
+                    <td class="seguimento" colspan="3" id="tdsbl">CATALOGO PÓS EXPRESS</td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black A Express 5.1</td>
+                    <td class="num">R$ 109,99</td>
+                    <td class="zero"></td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black B Express 5.1</td>
+                    <td class="num">R$ 134,99</td>
+                    <td class="zero"></td>
+                </tr>
+
+                <tr>
+                    <td>TIM Black C Express 5.1</td>
+                    <td class="num">R$ 149,99</td>
+                    <td class="zero"></td>
+                </tr>
+
+                <tr>
+                    <td>Tim Controle B Express 5.1 </td>
+                    <td class="num">R$ 49,99</td>
+                    <td class="zero"></td>
+                </tr>
+
+                <tr>
+                    <td>Tim Controle C Express 5 1 </td>
+                    <td class="num">R$ 59,99</td>
+                    <td class="zero"></td>
+
+                </tr>             
+
             
-        
-        
+
+            </tbody>
+
+            <tfoot>
+
+            </tfoot>
+
+
+                </table>
+          
+
        
 
 
